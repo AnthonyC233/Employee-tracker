@@ -60,9 +60,15 @@ const init = () => {
      });
 }
 // functions below will control all commands for each one.
-function viewEmployees () {
 
-}
+// Views employees
+function viewEmployees () {
+    db.query('SELECT * FROM employee', function (err,results) {
+        // console.table goes in table
+        console.table(results)
+        init();
+    });
+};
 
 function updateEmployeeRole () {
 

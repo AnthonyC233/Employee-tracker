@@ -1,5 +1,8 @@
 # Employee-tracker
 
+We had to build a command line application from 0 code to control a employee database, using sql, node.js, mysql12, and inquirer.
+
+Installation - run npm i in terminal.
 
 GIVEN a command-line application that accepts user input
 WHEN I start the application

@@ -12,14 +12,14 @@ const db = mysql.createConnection (
     },
     console.log('Starting to the employeetracker_db data')
 );
-
+// Creates prompt for user
 const init = () => {
     inquirer
         .prompt([
             {
                 type: 'list',
                 name: 'choice',
-                message: 'What would you like?',
+                message: 'Job?',
                 choices: [
                     'View All Employees',
                     'Add Employee',
@@ -31,4 +31,54 @@ const init = () => {
             ]
         },
     ])
+// Creates command prompts to allow unique choices
+    .then(res => {
+        let choice = res.choice; 
+        switch (choice) {
+            case 'View All Employees': 
+                viewEmployees(); 
+                break; 
+            case 'Add Employee':
+                addEmployee();
+                break;
+            case 'Update Employee Role':
+                updateEmployeeRole();
+                break;
+            case 'View All Roles':
+                viewAllRoles();
+                break;
+            case 'Add Role':
+                addRole();
+                break;
+            case 'View All Departments':
+                viewAllDepartments();
+                break;
+            case 'Add Department':
+                addDepartment();
+                break;
+         }
+     });
+}
+// functions below will control all commands for each one.
+function viewEmployees () {
+
+}
+
+function updateEmployeeRole () {
+
+}
+
+function viewAllRoles () {
+
+}
+
+function addRole () {
+}
+
+function viewAllDepartments () {
+
+}
+
+function addDepartment () {
+
 }

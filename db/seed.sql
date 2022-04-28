@@ -19,8 +19,8 @@ VALUES ("Lead engineer", 150000, 1),
     ('Sales Lead', 100000, 4),
     ("Sales Lead", 100000, 4);
 
-SELECT * FROM ROLE;
 
+-- Random names 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Bob", "Willis", 3, NULL),
     ("Tom", "Myspace", 3, 1),

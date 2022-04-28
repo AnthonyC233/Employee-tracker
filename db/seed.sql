@@ -1,3 +1,4 @@
+USE employeetracker_db
 
 INSERT INTO department (name)
 VALUES ("Engineering"),
@@ -30,4 +31,3 @@ VALUES ("Bob", "Willis", 3, NULL),
     ('Micheal', 'Jordan', 7, NULL),
     ('Brandon', 'Smith', 8, 7);
 
-SELECT * FROM employee;
